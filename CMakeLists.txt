@@ -35,6 +35,8 @@ add_library (bzip2 STATIC
   randtable.c
 )
 
+target_include_directories(bzip2 PUBLIC .)
+
 if (WIN32)
   set (_COMPARE fc)
 else (WIN32)
